@@ -6,12 +6,13 @@ class Api::V1::FavoritesController < ApplicationController
   end
 
   def create
-    current_user.favorites.create(favoritable_type: params[:favoritable_type], favoritable_id: [params[:id]])
+    @favoritable = current_user.favorites.new(favoritable_type: params[:favoritable_type], favoritable_id: params[:id])
+    @favoritable.save
     head :ok
   end
 
   def destroy
-    @favoritable = current_user.favorites.find_by(favoritable_type: params[:favoritable_type], favoritable_id: [params[:id]])
+    @favoritable = current_user.favorites.find_by(favoritable_type: params[:favoritable_type], favoritable_id: params[:id])
     @favoritable.destroy
     head :ok
   end

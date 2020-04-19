@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import { Heading, Columns } from 'react-bulma-components';
 import { FaPlayCircle, FaStopCircle } from "react-icons/fa";
 import styled from 'styled-components';
+import Favorite from './../../favorite';
 
 const MusicSeparator = styled.hr `
   height: 1px;
@@ -42,7 +43,7 @@ export default function Music(props) {
             <Columns.Column 
               desktop={{ size: 4 }} mobile={{ size: 4 }} 
               className='is-pulled-right has-text-right'>
-              {/* Favorite */}
+              <Favorite id={props.song.id} kind='songs' favored={props.song.favorite} />
             </Columns.Column>
           </Columns>
           
