@@ -17,7 +17,7 @@ export default function Menu() {
   
   if (useLocation().pathname == '/') {
     actionButton = <a href='/users/sign_in' className="is-pulled-right is-right">
-                    <Button outlined={true} color="white">ENTRAR</Button>
+                    <Button outlined={true} color="white">SIGN IN</Button>
                   </a>
   } else {
     actionButton = <Dropdown className='is-pulled-right is-right' color='dark' label={<FaUserCircle size="2em" />}>

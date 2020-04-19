@@ -24,7 +24,7 @@ export default function HomeScreen() {
       <Columns>
         <Columns.Column>
           <MainHeading className='has-text-weight-light has-text-centered has-text-white' size={1}>
-            SEU APP DE <br /><span className='has-text-success'>MÚSICA</span>
+            YOUR <br /> <span className='has-text-success'>MUSIC APP</span>
           </MainHeading>
         </Columns.Column>
       </Columns>
@@ -32,10 +32,10 @@ export default function HomeScreen() {
       <Columns className="is-centered is-mobile">
         <Columns.Column mobile={{ size: 8, offset: 1 }} desktop={{ size: 4, offset: 2 }}>
           <DescriptionList className='has-text-white'>
-            <li>Suas músicas <b>Favoritas</b></li>
-            <li>Seus <b>Podcasts</b></li>
-            <li>Os <b>Lançamentos</b></li>
-            <li>As novas <b>Descobertas</b></li>
+            <li>Your <b>favorite</b> songs</li>
+            <li>Your <b>podcasts</b></li>
+            <li>Find the <b>releases</b></li>
+            <li><b>Discover</b> new songs</li>
           </DescriptionList>
         </Columns.Column>
       </Columns>
@@ -43,7 +43,7 @@ export default function HomeScreen() {
       <Columns className="has-text-centered">
         <Columns.Column>        
           <a href="users/sign_up">
-            <ButtonSubscribe className='is-success is-outlined is-large has-text-white'>CADASTRAR AGORA</ButtonSubscribe>
+            <ButtonSubscribe className='is-success is-outlined is-large has-text-white'>SIGN UP NOW</ButtonSubscribe>
           </a>
         </Columns.Column>
       </Columns>

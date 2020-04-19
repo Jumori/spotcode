@@ -40,7 +40,7 @@ export default function Discovery() {
       {recent_albums.length > 0 &&
         <div>
           <Heading className='has-text-white' size={4}>
-            Tocadas recentemente
+            Recently played
           </Heading>
           <Columns className='is-mobile'>
             {recent_albums_components}
@@ -51,7 +51,7 @@ export default function Discovery() {
       {recommended_albums.length > 0 &&
         <DivVerticalSpaced>
             <Heading className='has-text-white' size={4}>
-              Recomendadas
+              Your recommendations
             </Heading>
             <Columns className='is-mobile'>
               {recommended_albums_components}
