@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import { Columns, Heading } from 'react-bulma-components';
 import styled from 'styled-components';
-import Album from './../album';
+import Album from './../common/album';
 import AlbumsService from './../../services/albums';
 
 const DivVerticalSpaced = styled.div`

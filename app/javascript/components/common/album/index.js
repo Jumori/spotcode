@@ -10,7 +10,7 @@ const DivVerticalSpaced = styled.div `
 export default function Album(props) {
   return(
     <Fragment>
-      <Link to={`/albums/${props.id}`}>      
+      <Link to={`/album/${props.id}`}>      
         <Image src={props.cover_url}/>
         <DivVerticalSpaced>
           <Heading size={6} className='has-text-white'>{props.title}</Heading>
