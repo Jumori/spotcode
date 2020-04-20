@@ -2,6 +2,7 @@ import React, { Fragment, useState, useEffect } from 'react';
 import { Columns } from 'react-bulma-components';
 import SearchBar from './search_bar';
 import Categories from './../common/categories';
+import ResultsTabs from './../common/results_tabs';
 import SearchService from './../../services/search';
 import CategoriesService from './../../services/categories';
 
@@ -27,13 +28,15 @@ export default function Search() {
 
   return(
     <Fragment>
-     <Columns>
-       <Columns.Column desktop={{ size: 6, offset: 3 }} mobile={{ size: 12 }}>
-         <SearchBar fetchSearch={fetchSearch} />
-       </Columns.Column>
-     </Columns>
-     
-     <Categories fetchCategorySearch={fetchCategorySearch} />
+      <Columns>
+        <Columns.Column desktop={{ size: 6, offset: 3 }} mobile={{ size: 12 }}>
+          <SearchBar fetchSearch={fetchSearch} />
+        </Columns.Column>
+      </Columns>
+
+      <ResultsTabs albums={albums} artists={artists} songs={songs}/>
+
+      <Categories fetchCategorySearch={fetchCategorySearch} />
     </Fragment>
   )
 }
